@@ -1,0 +1,37 @@
+
+<body>
+    <div id="container">
+      <div id="sidebar">
+        <!-- sidebar content goes here -->
+      </div>
+      <div id="main-content">
+        <!-- main content goes here -->
+      </div>
+    </div>
+
+    <style>
+     body {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #container {
+  display: flex; /* enable flexbox layout */
+}
+
+#sidebar {
+  width: 200px; /* adjust as needed */
+  height: 100%; /* make sidebar take up full height */
+  background: linear-gradient(to bottom, #333b5e, rgb(72, 76, 134)); /* gradient background using the #78bc9f color with transparency */
+  position: fixed; /* make sidebar stay in place */
+  top: 0; /* position sidebar at the top */
+  left: 0; /* position sidebar at the left */
+  border-radius: 10px; /* add rounded corners */
+}
+
+
+#main-content {
+  flex: 1; /* take up remaining space */
+  margin-left: 200px; /* make space for sidebar */
+}
+    </style>
+</body>
+  
